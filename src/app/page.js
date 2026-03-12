@@ -1,31 +1,32 @@
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+import Services from "../components/Services"
+import Projects from "../components/Projects"
+import About from "../components/About"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
+
 export default function Home() {
+
   return (
+
     <main>
 
-      {/* Hero Section */}
+      <Navbar />
 
-      <section className="min-h-screen flex flex-col justify-center items-center text-center">
+      <Hero />
 
-        <h1 className="text-5xl font-bold">
-          Shopify Developer
-        </h1>
+      <Services />
 
-        <p className="mt-6 text-xl max-w-xl">
-          I help ecommerce brands build, customize and optimize Shopify stores for better performance and conversions.
-        </p>
+      <Projects />
 
-        <div className="mt-8 flex gap-4">
-          <button className="bg-black text-white px-6 py-3 rounded">
-            View My Work
-          </button>
+      <About />
 
-          <button className="border px-6 py-3 rounded">
-            Contact Me
-          </button>
-        </div>
+      <Contact />
 
-      </section>
+      <Footer />
 
     </main>
-  );
+
+  )
 }
